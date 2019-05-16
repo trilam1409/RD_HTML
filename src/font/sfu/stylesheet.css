@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'SFU Futura';
+    src: url('../src/font/sfu/SFUFuturaOblique.eot');
+    src: url('../src/font/sfu/SFUFuturaOblique.eot?#iefix') format('embedded-opentype'),
+        url('../src/font/sfu/SFUFuturaOblique.woff2') format('woff2'),
+        url('../src/font/sfu/SFUFuturaOblique.woff') format('woff'),
+        url('../src/font/sfu/SFUFuturaOblique.ttf') format('truetype'),
+        url('../src/font/sfu/SFUFuturaOblique.svg#SFUFuturaOblique') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SFU Futura';
+    src: url('../src/font/sfu/SFUFuturaBook.eot');
+    src: url('../src/font/sfu/SFUFuturaBook.eot?#iefix') format('embedded-opentype'),
+        url('../src/font/sfu/SFUFuturaBook.woff2') format('woff2'),
+        url('../src/font/sfu/SFUFuturaBook.woff') format('woff'),
+        url('../src/font/sfu/SFUFuturaBook.ttf') format('truetype'),
+        url('../src/font/sfu/SFUFuturaBook.svg#SFUFuturaBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFU Futura';
+    src: url('../src/font/sfu/SFUFuturaHeavy.eot');
+    src: url('../src/font/sfu/SFUFuturaHeavy.eot?#iefix') format('embedded-opentype'),
+        url('../src/font/sfu/SFUFuturaHeavy.woff2') format('woff2'),
+        url('../src/font/sfu/SFUFuturaHeavy.woff') format('woff'),
+        url('../src/font/sfu/SFUFuturaHeavy.ttf') format('truetype'),
+        url('../src/font/sfu/SFUFuturaHeavy.svg#SFUFuturaHeavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFU Futura';
+    src: url('../src/font/sfu/SFUFuturaBold.eot');
+    src: url('../src/font/sfu/SFUFuturaBold.eot?#iefix') format('embedded-opentype'),
+        url('../src/font/sfu/SFUFuturaBold.woff2') format('woff2'),
+        url('../src/font/sfu/SFUFuturaBold.woff') format('woff'),
+        url('../src/font/sfu/SFUFuturaBold.ttf') format('truetype'),
+        url('../src/font/sfu/SFUFuturaBold.svg#SFUFuturaBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFU Futura';
+    src: url('../src/font/sfu/SFUFuturaExtraBold.eot');
+    src: url('../src/font/sfu/SFUFuturaExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../src/font/sfu/SFUFuturaExtraBold.woff2') format('woff2'),
+        url('../src/font/sfu/SFUFuturaExtraBold.woff') format('woff'),
+        url('../src/font/sfu/SFUFuturaExtraBold.ttf') format('truetype'),
+        url('../src/font/sfu/SFUFuturaExtraBold.svg#SFUFuturaExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SFU Futura';
+    src: url('../src/font/sfu/SFUFuturaBold_1.eot');
+    src: url('../src/font/sfu/SFUFuturaBold_1.eot?#iefix') format('embedded-opentype'),
+        url('../src/font/sfu/SFUFuturaBold_1.woff2') format('woff2'),
+        url('../src/font/sfu/SFUFuturaBold_1.woff') format('woff'),
+        url('../src/font/sfu/SFUFuturaBold_1.ttf') format('truetype'),
+        url('../src/font/sfu/SFUFuturaBold_1.svg#SFUFuturaBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

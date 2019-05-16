@@ -1,0 +1,426 @@
+//@import '~bootstrap/dist/css/bootstrap.min.css';
+//@import '~slick-carousel/slick/slick.css';
+
+////@mixin
+@mixin transform($val) {
+    transform: $val;
+    -o-transform: $val;
+    -ms-transform: $val;
+    -moz-transform: $val;
+    -webkit-transform: $val;
+}
+
+@mixin transition($val) {
+    transition: $val;
+    -o-transition: $val;
+    -moz-transition: $val;
+    -webkit-transition: $val;
+}
+
+/////General
+.section-resume-detail {
+    padding-top: 40px;
+}
+
+.block-main-infor {
+    margin-bottom: 32px;
+    padding-top: 100px;
+
+    .block-inner-left {
+        border: 1px solid #212529;
+        flex: 0 0 200px;
+    }
+
+    .block-inner-right {
+        border: 1px solid #212529;
+        margin-left: 30px;
+        padding: 16px 32px;
+        flex: 0 0 calc(100% - 230px);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .field-avatar {
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .group-information {
+        flex-grow: 1;
+        padding-right: 32px;
+    }
+
+    .group-action {
+        .field {
+            a {
+                padding: 8px 16px;
+                border: 1px solid #212529;
+                color: #212529;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+        .field-detail {
+            a {
+                border-radius: 5px;
+                width: 100%;
+                margin-top: 16px;
+            }
+
+        }
+    }
+
+    .field-company,
+    .field-gender-relationship {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #aaa;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+
+}
+
+.block-detail-infor {
+    .block-inner {
+
+        padding: 16px 32px;
+        margin-bottom: 40px;
+        background-color: #4f4b48;
+        color: white;
+        a{
+            color: white;
+        }
+
+    }
+
+    .label {
+        width: 200px;
+        white-space: pre-wrap;
+    }
+
+    .value{
+        text-transform: capitalize;
+    }
+
+    .block-inner-left {
+        padding: 0;
+        border-right: 3px solid #aaa;
+    }
+
+    .block-inner-right {
+        padding-left: 32px;
+    }
+
+
+}
+
+.block-attached-file {
+    .block-inner {
+        border: 1px solid #212529;
+        min-height: 500px;
+    }
+}
+
+.section-recommened-profiles {
+    padding-bottom: 50px;
+
+    .title {
+        display: block;
+        text-align: center;
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+
+}
+
+.block-recommened-profiles {
+    .block-inner {
+        justify-content: space-between;
+    }
+
+    .views-row {
+        flex: 0 0 230px;
+        height: 230px;
+        background-color: white;
+        border: 1px solid #212529;
+    }
+}
+
+////attached
+
+
+
+////////online
+.block-cv-online {
+    .block-content {
+        padding: 32px 16px;
+
+
+        .field-title {
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: #aaa;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        .field-body {
+            font-size: 14px;
+        }
+    }
+
+    .block-left{
+        background-color: #4f4b48;
+        color: white;
+        a{
+            color: white;
+        }
+    }
+
+    .block-inner {
+        display: grid;
+        grid-template-columns: 300px auto;
+        grid-template-rows: auto auto auto auto;
+
+        .block-inner-objective {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .block-inner-skills {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .block-inner-references {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        .block-group-right {
+            grid-column: 2;
+            grid-row: 1/5;
+            margin-left: 32px;
+        }
+    }
+
+
+    .block-group-right {
+        border: 1px solid #212529;
+    }
+
+
+}
+
+.block-inner-skills {
+    .field-body {
+        a {
+            padding: 8px 16px;
+            display: inline-block;
+            margin-left: 8px;
+            margin-right: 8px;
+            margin-bottom: 16px;
+            border: 1px solid white;
+            border-radius: 5px;
+
+        }
+    }
+}
+
+.block-inner-references {
+    .field-body {
+        span {
+            display: block;
+        }
+    }
+}
+
+%field-amount-time {
+    text-align: center;
+    flex: 0 0 170px;
+    margin-right: 32px;
+
+    span:not(.years-detail) {
+        padding: 12px 8px;
+        border: 1px solid #aaa;
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+.block-inner-education {
+    .field-body {
+        padding-bottom: 30px;
+
+        .field-amount-time {
+            @extend %field-amount-time;
+        }
+
+        .field-school,
+        .field-qualification {
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .field-school {
+            padding-bottom: 8px;
+        }
+
+        .field-description {
+            font-size: 14px;
+            padding-top: 20px;
+        }
+    }
+}
+
+.block-inner-experiences {
+    .field-title {
+        position: relative;
+        padding-right: 30px;
+
+        .years {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+            font-size: 14px;
+        }
+    }
+
+    .field-body {
+        padding-bottom: 30px;
+
+
+
+        .field-amount-time {
+            @extend %field-amount-time;
+        }
+
+        .field-company,
+        .field-position {
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .field-company {
+            padding-bottom: 8px;
+
+        }
+
+        .years-detail {
+            display: block;
+            text-align: right;
+            padding-top: 16px;
+            font-size: 14px;
+        }
+
+        .field-description {
+            font-size: 14px;
+            padding-top: 20px;
+        }
+    }
+}
+
+/////block sticky
+.block-main-infor-sticky {
+    position: fixed;
+    border: 1px solid #212529;
+    width: 100vw;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+
+    .block-inner {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        align-items: center;
+
+    }
+
+    .field-avatar {
+        padding-left: 30px;
+
+        .field-inner {
+            width: 100px;
+            height: 70px;
+            overflow: hidden;
+            border: 1px solid #212529;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+
+        }
+
+    }
+
+    .field-name-position {
+        padding-left: 16px;
+        padding-right: 40px;
+        margin-right: 40px;
+        border-right: 2px solid #aaa;
+    }
+
+    .field-location-age {
+        flex-grow: 1;
+    }
+
+    .field-contact {
+        a {
+            color: #212529;
+            padding: 0 95px;
+            margin-right: 32px;
+            display: inline-block;
+            text-align: center;
+            border: 1px solid #212529;
+            border-radius: 5px;
+        }
+    }
+}
+
+.block-navigation {
+    .block-inner {
+        border: 1px solid #212529;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-bottom: 20px;
+    }
+
+    .field-nav-item {
+
+        a {
+            color: #212529;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+}

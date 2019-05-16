@@ -1,0 +1,251 @@
+.section-resume-detail {
+  padding-top: 40px; }
+
+.block-main-infor {
+  margin-bottom: 32px;
+  padding-top: 100px; }
+  .block-main-infor .block-inner-left {
+    border: 1px solid #212529;
+    flex: 0 0 200px; }
+  .block-main-infor .block-inner-right {
+    border: 1px solid #212529;
+    margin-left: 30px;
+    padding: 16px 32px;
+    flex: 0 0 calc(100% - 230px);
+    justify-content: space-between;
+    align-items: center; }
+  .block-main-infor .field-avatar img {
+    width: 100%;
+    height: auto; }
+  .block-main-infor .group-information {
+    flex-grow: 1;
+    padding-right: 32px; }
+  .block-main-infor .group-action .field a {
+    padding: 8px 16px;
+    border: 1px solid #212529;
+    color: #212529;
+    display: inline-block;
+    text-align: center; }
+  .block-main-infor .group-action .field-detail a {
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 16px; }
+  .block-main-infor .field-company,
+  .block-main-infor .field-gender-relationship {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative; }
+    .block-main-infor .field-company::before,
+    .block-main-infor .field-gender-relationship::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #aaa;
+      left: 0;
+      bottom: 0; }
+
+.block-detail-infor .block-inner {
+  padding: 16px 32px;
+  margin-bottom: 40px;
+  background-color: #4f4b48;
+  color: white; }
+  .block-detail-infor .block-inner a {
+    color: white; }
+
+.block-detail-infor .label {
+  width: 200px;
+  white-space: pre-wrap; }
+
+.block-detail-infor .value {
+  text-transform: capitalize; }
+
+.block-detail-infor .block-inner-left {
+  padding: 0;
+  border-right: 3px solid #aaa; }
+
+.block-detail-infor .block-inner-right {
+  padding-left: 32px; }
+
+.block-attached-file .block-inner {
+  border: 1px solid #212529;
+  min-height: 500px; }
+
+.section-recommened-profiles {
+  padding-bottom: 50px; }
+  .section-recommened-profiles .title {
+    display: block;
+    text-align: center;
+    padding-bottom: 32px;
+    padding-top: 32px; }
+
+.block-recommened-profiles .block-inner {
+  justify-content: space-between; }
+
+.block-recommened-profiles .views-row {
+  flex: 0 0 230px;
+  height: 230px;
+  background-color: white;
+  border: 1px solid #212529; }
+
+.block-cv-online .block-content {
+  padding: 32px 16px; }
+  .block-cv-online .block-content .field-title {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative; }
+    .block-cv-online .block-content .field-title::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #aaa;
+      left: 0;
+      bottom: 0; }
+  .block-cv-online .block-content .field-body {
+    font-size: 14px; }
+
+.block-cv-online .block-left {
+  background-color: #4f4b48;
+  color: white; }
+  .block-cv-online .block-left a {
+    color: white; }
+
+.block-cv-online .block-inner {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-rows: auto auto auto auto; }
+  .block-cv-online .block-inner .block-inner-objective {
+    grid-column: 1;
+    grid-row: 1; }
+  .block-cv-online .block-inner .block-inner-skills {
+    grid-column: 1;
+    grid-row: 2; }
+  .block-cv-online .block-inner .block-inner-references {
+    grid-column: 1;
+    grid-row: 3; }
+  .block-cv-online .block-inner .block-group-right {
+    grid-column: 2;
+    grid-row: 1/5;
+    margin-left: 32px; }
+
+.block-cv-online .block-group-right {
+  border: 1px solid #212529; }
+
+.block-inner-skills .field-body a {
+  padding: 8px 16px;
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 16px;
+  border: 1px solid white;
+  border-radius: 5px; }
+
+.block-inner-references .field-body span {
+  display: block; }
+
+.block-inner-education .field-body .field-amount-time, .block-inner-experiences .field-body .field-amount-time {
+  text-align: center;
+  flex: 0 0 170px;
+  margin-right: 32px; }
+  .block-inner-education .field-body .field-amount-time span:not(.years-detail), .block-inner-experiences .field-body .field-amount-time span:not(.years-detail) {
+    padding: 12px 8px;
+    border: 1px solid #aaa;
+    display: inline-block;
+    width: 100%; }
+
+.block-inner-education .field-body {
+  padding-bottom: 30px; }
+  .block-inner-education .field-body .field-school,
+  .block-inner-education .field-body .field-qualification {
+    font-weight: 700;
+    font-size: 16px; }
+  .block-inner-education .field-body .field-school {
+    padding-bottom: 8px; }
+  .block-inner-education .field-body .field-description {
+    font-size: 14px;
+    padding-top: 20px; }
+
+.block-inner-experiences .field-title {
+  position: relative;
+  padding-right: 30px; }
+  .block-inner-experiences .field-title .years {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 14px; }
+
+.block-inner-experiences .field-body {
+  padding-bottom: 30px; }
+  .block-inner-experiences .field-body .field-company,
+  .block-inner-experiences .field-body .field-position {
+    font-weight: 700;
+    font-size: 16px; }
+  .block-inner-experiences .field-body .field-company {
+    padding-bottom: 8px; }
+  .block-inner-experiences .field-body .years-detail {
+    display: block;
+    text-align: right;
+    padding-top: 16px;
+    font-size: 14px; }
+  .block-inner-experiences .field-body .field-description {
+    font-size: 14px;
+    padding-top: 20px; }
+
+.block-main-infor-sticky {
+  position: fixed;
+  border: 1px solid #212529;
+  width: 100vw;
+  top: 0;
+  background-color: white;
+  z-index: 1; }
+  .block-main-infor-sticky .block-inner {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    align-items: center; }
+  .block-main-infor-sticky .field-avatar {
+    padding-left: 30px; }
+    .block-main-infor-sticky .field-avatar .field-inner {
+      width: 100px;
+      height: 70px;
+      overflow: hidden;
+      border: 1px solid #212529;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .block-main-infor-sticky .field-avatar img {
+      width: 100%;
+      height: auto; }
+  .block-main-infor-sticky .field-name-position {
+    padding-left: 16px;
+    padding-right: 40px;
+    margin-right: 40px;
+    border-right: 2px solid #aaa; }
+  .block-main-infor-sticky .field-location-age {
+    flex-grow: 1; }
+  .block-main-infor-sticky .field-contact a {
+    color: #212529;
+    padding: 0 95px;
+    margin-right: 32px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #212529;
+    border-radius: 5px; }
+
+.block-navigation .block-inner {
+  border: 1px solid #212529;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 20px; }
+
+.block-navigation .field-nav-item a {
+  color: #212529;
+  padding-left: 16px;
+  padding-right: 16px; }
+
+
+/*# sourceMappingURL=app.css.map*/
